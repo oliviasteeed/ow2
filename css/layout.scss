@@ -1,0 +1,154 @@
+@import 'util/functions.scss';
+
+.global-container{
+    margin: rem(10);
+    // border:red 1px solid;
+}
+
+/* header bar */
+.header-bar{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    // border:yellowgreen 1px solid;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    // background-color: #ECECEA;
+    /*uncomment this when title scrolls into bar*/
+}
+
+.header-date{
+    width: 105px;
+    // border:plum 1px solid;
+}
+
+.header-links{
+    display:flex;
+    flex-direction:row;
+    gap:0.5rem;
+    // border:plum 1px solid;
+    width: 105px;
+}
+
+/* title page */
+.home-landing{
+    height: 97vh;
+    // border:orange 1px solid;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+    gap:5rem;
+}
+
+.site-title{
+
+}
+
+/* site content nav */
+
+.home-content{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:10rem;
+    // border: solid aqua 1px;
+    margin: 5rem 0 10rem 0;
+}
+
+.home-projects{
+    width: 60vw;
+    // border: solid pink 1px;
+    display:flex;
+    gap:5vw;
+}
+
+.home-project-section{
+    width: 25vw;
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    gap:2rem;
+}
+
+.project-card{
+    display:flex;
+    flex-direction:column;
+    gap:0.5rem;
+    // border: 1px solid blue;
+}
+
+.home-about{
+    width: 60vw;
+    // border: 1px solid green;
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+}
+
+.site-title-box{
+    // border: 1px solid pink;
+    height:65vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.scrolldown-box{
+    display:flex;
+    flex-direction:column;
+    // border: 1px solid cyan;
+    align-items:center;
+    // gap:0.25rem;
+}
+
+
+
+
+/* project pages */
+
+.header-title-box{
+    // border: 1px solid tomato;
+}
+
+.proj-header-bar{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+
+}
+
+/* project title and description */
+.project-intro{
+    display:flex;
+    flex-direction:column;
+    gap:0.5rem;
+    margin-bottom:2rem;
+}
+
+/* title and text */
+.project-chunk{
+    display:flex;
+    flex-direction:column;
+    gap:0.5rem;
+    // border: 1px solid blue;
+    max-width: rem(600);
+}
+
+img{
+    width:100%;
+    max-width: rem(600);
+}
+
+.image-box{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+    // border: 1px solid orange;
+}
+
+footer{
+    display:flex;
+    flex-direction:column;
+}

@@ -1,0 +1,20 @@
+:root {
+  --title-font: "alpina-thin", serif;
+  --h4-font: "alpina-regular", serif;
+  --text-font:"neue-haas-unica", sans-serif;
+}
+
+@font-face {
+  font-family: "alpina-thin";
+  font-weight: 300;
+  font-style: normal;
+  src: url("../../media/fonts/GT-Alpina-Condensed-Regular-Trial.eot");
+  src: url("../fonts/GT-Alpina-Condensed-Regular-Trial.eot?#iefix") format("embedded-opentype"), url("../../media/fonts/GT-Alpina-Condensed-Regular-Trial.woff2") format("woff2"), url("../../media/fonts/GT-Alpina-Condensed-Regular-Trial.woff") format("woff"), url("../../media/fonts/GT-Alpina-Condensed-Regular-Trial.ttf") format("truetype");
+}
+@font-face {
+  font-family: "alpina-regular";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../../media/fonts/GT-Alpina-Condensed-Thin-Trial.eot");
+  src: url("../../media/fonts/GT-Alpina-Condensed-Thin-Trial.eot?#iefix") format("embedded-opentype"), url("../../media/fonts/GT-Alpina-Condensed-Thin-Trial.woff2") format("woff2"), url("../../media/fonts/GT-Alpina-Condensed-Thin-Trial.woff") format("woff"), url("../../media/fonts/GT-Alpina-Condensed-Thin-Trial.ttf") format("truetype");
+}

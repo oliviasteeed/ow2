@@ -1,0 +1,307 @@
+:root {
+  --title-font: "alpina-thin", serif;
+  --h4-font: "alpina-regular", serif;
+  --text-font:"neue-haas-unica", sans-serif;
+}
+
+@font-face {
+  font-family: "alpina-regular";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/GT-Alpina-Condensed-Regular-Trial.eot");
+  src: url("../fonts/GT-Alpina-Condensed-Regular-Trial.eot?#iefix") format("embedded-opentype"), url("../fonts/GT-Alpina-Condensed-Regular-Trial.woff2") format("woff2"), url("../fonts/GT-Alpina-Condensed-Regular-Trial.woff") format("woff"), url("../fonts/GT-Alpina-Condensed-Regular-Trial.ttf") format("truetype");
+}
+@font-face {
+  font-family: "alpina-thin";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/GT-Alpina-Condensed-Thin-Trial.eot");
+  src: url("../fonts/GT-Alpina-Condensed-Thin-Trial.eot?#iefix") format("embedded-opentype"), url("../fonts/GT-Alpina-Condensed-Thin-Trial.woff2") format("woff2"), url("../fonts/GT-Alpina-Condensed-Thin-Trial.woff") format("woff"), url("../fonts/GT-Alpina-Condensed-Thin-Trial.ttf") format("truetype");
+}
+:root {
+  --offwhite: hex(#ECECEA);
+  --black: hex(#14161C);
+  --offblack: hex(#14161C);
+  --indigo: hex(#4E55EF);
+  --background-color: hex(#EBFC72);
+}
+
+body {
+  background-color: #ECECEA;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-family: "alpina-thin", serif;
+  font-size: 4rem;
+  letter-spacing: -5px;
+  font-weight: normal;
+  font-style: normal;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+  font-family: "neue-haas-unica", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: -0.5px;
+  line-height: 100%;
+  font-style: normal;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+  font-family: "neue-haas-unica", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  letter-spacing: -0.5px;
+  line-height: 100%;
+  font-style: normal;
+}
+
+h4 {
+  margin: 0;
+  padding: 0;
+  font-family: "neue-haas-unica", sans-serif;
+  font-size: 1rem;
+  letter-spacing: -1px;
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.p-smallest {
+  margin: 0;
+  padding: 0;
+  font-family: "neue-haas-unica", sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: -0.25px;
+  line-height: 130%;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.p-small {
+  margin: 0;
+  padding: 0;
+  font-family: "neue-haas-unica", sans-serif;
+  font-size: 1rem;
+  letter-spacing: -0.25px;
+  line-height: 130%;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.p-large {
+  margin: 0;
+  padding: 0;
+  font-family: "neue-haas-unica", sans-serif;
+  font-size: 2rem;
+  letter-spacing: -0.5px;
+  line-height: 130%;
+  font-weight: 400;
+  font-style: normal;
+}
+
+strong {
+  margin: 0;
+  padding: 0;
+  font-family: "alpina-thin", serif;
+  font-size: 2.5rem;
+  letter-spacing: -1.5px;
+  font-style: normal;
+  font-weight: 200;
+  text-decoration: none;
+}
+
+em {
+  margin: 0;
+  padding: 0;
+  font-family: "neue-haas-unica", sans-serif;
+  font-size: 2rem;
+  letter-spacing: -0.5px;
+  line-height: 130%;
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* navigation links */
+.nav-link {
+  margin: 0;
+  padding: 0;
+  font-family: "neue-haas-unica", sans-serif;
+  font-size: 1rem;
+  letter-spacing: -1px;
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
+  color: #0000EE;
+  -webkit-transition: color ease-in-out 0.3s;
+  transition: color ease-in-out 0.3s;
+}
+
+/* project titles */
+.project-link {
+  margin: 0;
+  padding: 0;
+  font-family: "neue-haas-unica", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  letter-spacing: -0.5px;
+  line-height: 100%;
+  font-style: normal;
+  text-decoration: none;
+  color: var(--black);
+  -webkit-transition: color ease-in-out 0.3s;
+  transition: color ease-in-out 0.3s;
+}
+
+/* site title link */
+.title-link {
+  margin: 0;
+  padding: 0;
+  font-family: "alpina-thin", serif;
+  font-size: 2rem;
+  letter-spacing: -2px;
+  font-weight: normal;
+  font-style: normal;
+  color: var(--black);
+  text-decoration: none;
+  -webkit-transition: color ease-in-out 0.3s;
+  transition: color ease-in-out 0.3s;
+}
+
+.project-link:hover,
+.project-link:focus,
+.title-link:hover,
+.title-link:focus {
+  color: #0000EE;
+}
+
+.scrolldown-icon {
+  width: 2.5rem;
+}
+
+/* highlight colour */
+/* selection colour */
+p::-moz-selection {
+  background-color: #EBFC72;
+}
+p::selection {
+  background-color: #EBFC72;
+}
+
+em::-moz-selection {
+  background-color: #EBFC72;
+}
+
+em::selection {
+  background-color: #EBFC72;
+}
+
+strong::-moz-selection {
+  background-color: #EBFC72;
+}
+
+strong::selection {
+  background-color: #EBFC72;
+}
+
+code::-moz-selection {
+  background-color: #EBFC72;
+}
+
+code::selection {
+  background-color: #EBFC72;
+}
+
+h1::-moz-selection {
+  background-color: #EBFC72;
+}
+
+h1::selection {
+  background-color: #EBFC72;
+}
+
+h2::-moz-selection {
+  background-color: #EBFC72;
+}
+
+h2::selection {
+  background-color: #EBFC72;
+}
+
+h3::-moz-selection {
+  background-color: #EBFC72;
+}
+
+h3::selection {
+  background-color: #EBFC72;
+}
+
+h4::-moz-selection {
+  background-color: #EBFC72;
+}
+
+h4::selection {
+  background-color: #EBFC72;
+}
+
+h5::-moz-selection {
+  background-color: #EBFC72;
+}
+
+h5::selection {
+  background-color: #EBFC72;
+}
+
+a::-moz-selection {
+  background-color: #EBFC72;
+}
+
+a::selection {
+  background-color: #EBFC72;
+}
+
+ul::-moz-selection {
+  background-color: #EBFC72;
+}
+
+ul::selection {
+  background-color: #EBFC72;
+}
+
+ol::-moz-selection {
+  background-color: #EBFC72;
+}
+
+ol::selection {
+  background-color: #EBFC72;
+}
+
+li::-moz-selection {
+  background-color: #EBFC72;
+}
+
+li::selection {
+  background-color: #EBFC72;
+}
+
+img::-moz-selection {
+  background-color: #EBFC72;
+}
+
+img::selection {
+  background-color: #EBFC72;
+}
+
+figcaption::-moz-selection {
+  background-color: #EBFC72;
+}
+
+figcaption::selection {
+  background-color: #EBFC72;
+}
