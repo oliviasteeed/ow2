@@ -42,9 +42,6 @@
     gap:5rem;
 }
 
-.site-title{
-
-}
 
 /* site content nav */
 
@@ -72,8 +69,29 @@
     gap:2rem;
 }
 
+//footer more projects
+.footer-container{
+    width: 60vw;
+    // border: solid pink 1px;
+    display:flex;
+    gap:2rem;
+    flex-direction:column;
+}
+
+.footer-more-projects{
+    flex:1;
+    display:flex;
+    flex-direction:row;
+    gap:2rem;
+    // border: solid orange 1px;
+}
+
+
+
+
 .project-card{
     display:flex;
+    flex:1;
     flex-direction:column;
     gap:0.5rem;
     // border: 1px solid blue;
