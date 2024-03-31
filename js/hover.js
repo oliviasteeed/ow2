@@ -107,3 +107,20 @@ mbintphover.onmousemove = function (e){
     mbintpimg.style.left = e.pageX + 3  + "px";
     mbintpimg.style.top = e.pageY - 50 + "px";
 }
+
+// dumbcute ceramics hover //
+var dcceramicsimg = document.getElementById("dc-img");
+var dcceramicshover = document.getElementById("dc-hover");
+
+dcceramicshover.onmouseenter = function (e){
+    dcceramicsimg.style.display="block";
+}
+
+dcceramicshover.onmouseleave = function (e){
+    dcceramicsimg.style.display="none";
+}
+
+dcceramicshover.onmousemove = function (e){
+    dcceramicsimg.style.left = e.pageX + 3  + "px";
+    dcceramicsimg.style.top = e.pageY - 100 + "px";
+}

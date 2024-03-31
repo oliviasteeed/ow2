@@ -77,6 +77,8 @@
     flex-direction:column;
     gap:0.5rem;
     // border: 1px solid blue;
+    // max-width: rem(350);
+    // min-width: rem(200);
 }
 
 .titlegif{
@@ -128,8 +130,15 @@
 .project-intro{
     display:flex;
     flex-direction:column;
-    gap:0.5rem;
+    gap:1rem;
     margin-bottom:2rem;
+}
+
+//summary bullets
+.project-summary{
+    display: flex;
+    flex-direction: column;
+    gap:0.25rem;
 }
 
 /* title and text */
@@ -170,4 +179,22 @@ iframe{
 footer{
     display:flex;
     flex-direction:column;
+}
+
+// change theme colours
+.colours-container{
+    display:flex;
+    flex-direction: column;
+    gap: rem(5);
+    position:fixed;
+    top:40vh;
+    left:19px;
+}
+
+// close button on project pages
+.x-container{
+    position:fixed;
+    top:8rem;
+    right:100px;
+    width:20px;
 }

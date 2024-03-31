@@ -19,6 +19,7 @@
   src: url("../fonts/GT-Alpina-Condensed-Thin-Trial.eot?#iefix") format("embedded-opentype"), url("../fonts/GT-Alpina-Condensed-Thin-Trial.woff2") format("woff2"), url("../fonts/GT-Alpina-Condensed-Thin-Trial.woff") format("woff"), url("../fonts/GT-Alpina-Condensed-Thin-Trial.ttf") format("truetype");
 }
 :root {
+  --white: #ffffff;
   --offwhite: #ECECEA;
   --black: #14161C;
   --blue: #0000EE;
@@ -59,9 +60,12 @@
 .light .nav-link {
   color: var(--blue);
 }
+.light figcaption {
+  color: var(--black);
+}
 
 .dark {
-  background-color: var(--green);
+  background-color: var(--black);
 }
 .dark h1 {
   color: var(--offwhite);
@@ -90,9 +94,12 @@
 .dark .nav-link {
   color: var(--red);
 }
+.dark figcaption {
+  color: var(--offwhite);
+}
 
 .red {
-  background-color: var(--red);
+  background-color: var(--black);
 }
 .red h1 {
   color: var(--offwhite);
@@ -116,10 +123,13 @@
 .red .project-link:focus,
 .red .title-link:hover,
 .red .title-link:focus {
-  color: var(--blue);
+  color: var(--red);
 }
 .red .nav-link {
-  color: var(--blue);
+  color: var(--red);
+}
+.red figcaption {
+  color: var(--offwhite);
 }
 
 .green {
@@ -152,6 +162,9 @@
 .green .nav-link {
   color: var(--red);
 }
+.green figcaption {
+  color: var(--offwhite);
+}
 
 .blue {
   background-color: var(--blue);
@@ -182,6 +195,9 @@
 }
 .blue .nav-link {
   color: var(--red);
+}
+.blue figcaption {
+  color: var(--offwhite);
 }
 
 .yellow {
@@ -214,6 +230,9 @@
 .yellow .nav-link {
   color: var(--blue);
 }
+.yellow figcaption {
+  color: var(--black);
+}
 
 .pink {
   background-color: var(--pink);
@@ -244,6 +263,9 @@
 }
 .pink .nav-link {
   color: var(--blue);
+}
+.pink figcaption {
+  color: var(--offwhite);
 }
 
 h1 {
@@ -452,125 +474,137 @@ em {
   width: 10rem;
 }
 
+#dc-img {
+  width: 9.375rem;
+}
+
 /* highlight colour */
 /* selection colour */
 p::-moz-selection {
-  background-color: var(--highlight);
+  background-color: var(--pink);
 }
 p::selection {
-  background-color: var(--highlight);
+  background-color: var(--pink);
 }
 
 em::-moz-selection {
-  background-color: var(--highlight);
+  background-color: var(--pink);
 }
 
 em::selection {
-  background-color: var(--highlight);
+  background-color: var(--pink);
 }
 
 strong::-moz-selection {
-  background-color: var(--highlight);
+  background-color: var(--pink);
 }
 
 strong::selection {
-  background-color: var(--highlight);
+  background-color: var(--pink);
 }
 
 code::-moz-selection {
-  background-color: var(--highlight);
+  background-color: var(--pink);
 }
 
 code::selection {
-  background-color: var(--highlight);
+  background-color: var(--pink);
 }
 
 h1::-moz-selection {
-  background-color: var(--highlight);
+  background-color: var(--pink);
 }
 
 h1::selection {
-  background-color: var(--highlight);
+  background-color: var(--pink);
 }
 
 h2::-moz-selection {
-  background-color: var(--highlight);
+  background-color: var(--pink);
 }
 
 h2::selection {
-  background-color: var(--highlight);
+  background-color: var(--pink);
 }
 
 h3::-moz-selection {
-  background-color: var(--highlight);
+  background-color: var(--pink);
 }
 
 h3::selection {
-  background-color: var(--highlight);
+  background-color: var(--pink);
 }
 
 h4::-moz-selection {
-  background-color: var(--highlight);
+  background-color: var(--pink);
 }
 
 h4::selection {
-  background-color: var(--highlight);
+  background-color: var(--pink);
 }
 
 h5::-moz-selection {
-  background-color: var(--highlight);
+  background-color: var(--pink);
 }
 
 h5::selection {
-  background-color: var(--highlight);
+  background-color: var(--pink);
 }
 
 a::-moz-selection {
-  background-color: var(--highlight);
+  background-color: var(--pink);
 }
 
 a::selection {
-  background-color: var(--highlight);
+  background-color: var(--pink);
 }
 
 ul::-moz-selection {
-  background-color: var(--highlight);
+  background-color: var(--pink);
 }
 
 ul::selection {
-  background-color: var(--highlight);
+  background-color: var(--pink);
 }
 
 ol::-moz-selection {
-  background-color: var(--highlight);
+  background-color: var(--pink);
 }
 
 ol::selection {
-  background-color: var(--highlight);
+  background-color: var(--pink);
 }
 
 li::-moz-selection {
-  background-color: var(--highlight);
+  background-color: var(--pink);
 }
 
 li::selection {
-  background-color: var(--highlight);
+  background-color: var(--pink);
 }
 
 img::-moz-selection {
-  background-color: var(--highlight);
+  background-color: var(--pink);
 }
 
 img::selection {
-  background-color: var(--highlight);
+  background-color: var(--pink);
 }
 
 figcaption::-moz-selection {
-  background-color: var(--highlight);
+  background-color: var(--pink);
 }
 
 figcaption::selection {
-  background-color: var(--highlight);
+  background-color: var(--pink);
+}
+
+span::-moz-selection {
+  background-color: var(--pink);
+}
+
+span::selection {
+  background-color: var(--pink);
 }
 
 /* cursor */
@@ -592,3 +626,52 @@ figcaption::selection {
 }
 
 /* making cursor bigger when it hovers link or clicks*/
+.selected-border {
+  border: 1px solid var(--black);
+}
+
+.border {
+  border: 1px solid var(--white);
+}
+
+.white-button {
+  width: 0.625rem;
+  height: 0.625rem;
+  border-radius: 100%;
+  background-color: var(--offwhite);
+}
+
+.red-button {
+  width: 0.625rem;
+  height: 0.625rem;
+  border-radius: 100%;
+  background-color: var(--red);
+}
+
+.blue-button {
+  width: 0.625rem;
+  height: 0.625rem;
+  border-radius: 100%;
+  background-color: var(--blue);
+}
+
+.yellow-button {
+  width: 0.625rem;
+  height: 0.625rem;
+  border-radius: 100%;
+  background-color: var(--yellow);
+}
+
+.pink-button {
+  width: 0.625rem;
+  height: 0.625rem;
+  border-radius: 100%;
+  background-color: var(--pink);
+}
+
+.green-button {
+  width: 0.625rem;
+  height: 0.625rem;
+  border-radius: 100%;
+  background-color: var(--green);
+}
