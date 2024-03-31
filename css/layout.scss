@@ -79,6 +79,11 @@
     // border: 1px solid blue;
 }
 
+.titlegif{
+    // border: solid brown 1px;
+    max-width: rem(900);
+}
+
 .home-about{
     width: 60vw;
     // border: 1px solid green;
@@ -138,14 +143,28 @@
 
 img{
     width:100%;
-    max-width: rem(600);
+    max-width:100%;
+    border-radius:8px;
+    // max-width: rem(600);
 }
 
 .image-box{
     display:flex;
     flex-direction:column;
-    align-items:flex-end;
-    // border: 1px solid orange;
+    // align-items:flex-end;
+    align-items:center;
+}
+
+.video-box{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    // align-items:flex-end;
+}
+
+iframe{
+    border-radius:8px;
+    border: black 1px solid;
 }
 
 footer{

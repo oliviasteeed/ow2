@@ -2,9 +2,79 @@
 @import 'fonts.scss';
 @import 'colours.scss';
 
-body {
-    background-color: #ECECEA;
+// themes
+
+.light {
+    background-color: var(--offwhite);
+
+    h1 {
+        color: var(--black);
+    }
+
+    h2 {
+        color: var(--black);
+    }
+
+    h3 {
+        color: var(--black);
+    }
+
+    h4 {
+        color: var(--black);
+    }
+
+    p {
+        color: var(--black);
+    }
+
+    a {
+        color: var(--black);
+    }
 }
+
+.dark {
+    background-color: var(--blue);
+
+    h1 {
+        color: var(--offwhite);
+    }
+
+    h2 {
+        color: var(--offwhite);
+    }
+
+    h3 {
+        color: var(--offwhite);
+    }
+
+    h4 {
+        color: var(--offwhite);
+    }
+
+    p {
+        color: var(--offwhite);
+    }
+
+    a {
+        color: var(--offwhite);
+    }
+
+    .project-link:hover,
+    .project-link:focus,
+    .title-link:hover,
+    .title-link:focus {
+        color: var(--red);
+    }
+    .nav-link {
+        color: var(--red);
+    }
+}
+
+
+// body {
+//     background-color: var(--offwhite);
+//     cursor: url('img/cursor.png'), auto;
+// }
 
 h1 {
     margin: 0;
@@ -76,6 +146,17 @@ h4 {
     font-style: normal;
 }
 
+.bold-p-small {
+    margin: 0;
+    padding: 0;
+    font-family: "neue-haas-unica", sans-serif;
+    font-size: rem(18);
+    letter-spacing: -0.25px;
+    line-height: 130%;
+    font-weight: 600;
+    font-style: normal;
+}
+
 .p-large {
     margin: 0;
     padding: 0;
@@ -84,6 +165,30 @@ h4 {
     letter-spacing: -0.5px;
     line-height: 130%;
     font-weight: 400;
+    font-style: normal;
+}
+
+.p-medium {
+    margin: 0;
+    padding: 0;
+    font-family: "neue-haas-unica", sans-serif;
+    font-size: rem(24);
+    font-weight: 400;
+    letter-spacing: -0.25px;
+    line-height: 130%;
+    font-style: normal;
+}
+
+ul {}
+
+li {
+    margin: 0;
+    padding: 0;
+    font-family: "neue-haas-unica", sans-serif;
+    font-weight: 500;
+    font-size: rem(24);
+    letter-spacing: -0.1px;
+    line-height: 120%;
     font-style: normal;
 }
 
@@ -148,7 +253,7 @@ em {
     font-style: normal;
     font-weight: 400;
     text-decoration: none;
-    color: #0000EE;
+    color: var(--blue);
     transition: color ease-in-out 0.3s;
 }
 
@@ -186,7 +291,7 @@ em {
 .title-link:hover,
 .title-link:focus {
     // color: #4E55EF;
-    color: #0000EE;
+    color: var(--blue);
 }
 
 .project-link:visited,
@@ -199,12 +304,34 @@ em {
     width: rem(40);
 }
 
+/* project preview images */
+
+/* hidden when not hovering */
+.preview-img {
+    position: absolute;
+    display: none;
+    width: rem(100);
+}
+
+#betweendreams-img {
+    width: rem(200);
+}
+
+#mytakeaway-img {
+    width: rem(150);
+}
+
+#viavia-img {
+    width: rem(160);
+}
+
+
 /* highlight colour */
 /* selection colour */
 
 @mixin background-colour {
     // background-color: var(--background-color);
-    background-color: #EBFC72;
+    background-color: var(--highlight);
 }
 
 p::selection {
@@ -266,3 +393,27 @@ img::selection {
 figcaption::selection {
     @include background-colour;
 }
+
+
+
+/* cursor */
+    #cursor {
+        width: rem(30);
+        height: rem(30);
+        border-radius: 100%;
+        transition: all 200ms ease-out;
+        position: fixed;
+        pointer-events: none;
+        left: 0;
+        top: 0;
+        transform: translate(calc(-50% + 15px), -50%);
+        mix-blend-mode: saturation;
+        background-color: var(--yellow);
+        z-index: 500;
+    }
+
+    /* making cursor bigger when it hovers link or clicks*/
+//     .cursor-expand {
+//         width: 80px;
+//         height: 80px;
+// }

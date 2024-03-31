@@ -19,15 +19,67 @@
   src: url("../fonts/GT-Alpina-Condensed-Thin-Trial.eot?#iefix") format("embedded-opentype"), url("../fonts/GT-Alpina-Condensed-Thin-Trial.woff2") format("woff2"), url("../fonts/GT-Alpina-Condensed-Thin-Trial.woff") format("woff"), url("../fonts/GT-Alpina-Condensed-Thin-Trial.ttf") format("truetype");
 }
 :root {
-  --offwhite: hex(#ECECEA);
-  --black: hex(#14161C);
-  --offblack: hex(#14161C);
-  --indigo: hex(#4E55EF);
-  --background-color: hex(#EBFC72);
+  --offwhite: #ECECEA;
+  --black: #14161C;
+  --blue: #0000EE;
+  --green: #0D8A4E;
+  --highlight: #EBFC72;
+  --yellow: #FFF620;
+  --red: #FF5C00;
+  --pink: #FC72CA;
 }
 
-body {
-  background-color: #ECECEA;
+.light {
+  background-color: var(--offwhite);
+}
+.light h1 {
+  color: var(--black);
+}
+.light h2 {
+  color: var(--black);
+}
+.light h3 {
+  color: var(--black);
+}
+.light h4 {
+  color: var(--black);
+}
+.light p {
+  color: var(--black);
+}
+.light a {
+  color: var(--black);
+}
+
+.dark {
+  background-color: var(--blue);
+}
+.dark h1 {
+  color: var(--offwhite);
+}
+.dark h2 {
+  color: var(--offwhite);
+}
+.dark h3 {
+  color: var(--offwhite);
+}
+.dark h4 {
+  color: var(--offwhite);
+}
+.dark p {
+  color: var(--offwhite);
+}
+.dark a {
+  color: var(--offwhite);
+}
+.dark .project-link:hover,
+.dark .project-link:focus,
+.dark .title-link:hover,
+.dark .title-link:focus {
+  color: var(--red);
+}
+.dark .nav-link {
+  color: var(--red);
 }
 
 h1 {
@@ -95,6 +147,17 @@ h4 {
   font-style: normal;
 }
 
+.bold-p-small {
+  margin: 0;
+  padding: 0;
+  font-family: "neue-haas-unica", sans-serif;
+  font-size: 1.125rem;
+  letter-spacing: -0.25px;
+  line-height: 130%;
+  font-weight: 600;
+  font-style: normal;
+}
+
 .p-large {
   margin: 0;
   padding: 0;
@@ -103,6 +166,28 @@ h4 {
   letter-spacing: -0.5px;
   line-height: 130%;
   font-weight: 400;
+  font-style: normal;
+}
+
+.p-medium {
+  margin: 0;
+  padding: 0;
+  font-family: "neue-haas-unica", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: -0.25px;
+  line-height: 130%;
+  font-style: normal;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  font-family: "neue-haas-unica", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  letter-spacing: -0.1px;
+  line-height: 120%;
   font-style: normal;
 }
 
@@ -138,7 +223,7 @@ em {
   font-style: normal;
   font-weight: 400;
   text-decoration: none;
-  color: #0000EE;
+  color: var(--blue);
   -webkit-transition: color ease-in-out 0.3s;
   transition: color ease-in-out 0.3s;
 }
@@ -178,130 +263,170 @@ em {
 .project-link:focus,
 .title-link:hover,
 .title-link:focus {
-  color: #0000EE;
+  color: var(--blue);
 }
 
 .scrolldown-icon {
   width: 2.5rem;
 }
 
+/* project preview images */
+/* hidden when not hovering */
+.preview-img {
+  position: absolute;
+  display: none;
+  width: 6.25rem;
+}
+
+#betweendreams-img {
+  width: 12.5rem;
+}
+
+#mytakeaway-img {
+  width: 9.375rem;
+}
+
+#viavia-img {
+  width: 10rem;
+}
+
 /* highlight colour */
 /* selection colour */
 p::-moz-selection {
-  background-color: #EBFC72;
+  background-color: var(--highlight);
 }
 p::selection {
-  background-color: #EBFC72;
+  background-color: var(--highlight);
 }
 
 em::-moz-selection {
-  background-color: #EBFC72;
+  background-color: var(--highlight);
 }
 
 em::selection {
-  background-color: #EBFC72;
+  background-color: var(--highlight);
 }
 
 strong::-moz-selection {
-  background-color: #EBFC72;
+  background-color: var(--highlight);
 }
 
 strong::selection {
-  background-color: #EBFC72;
+  background-color: var(--highlight);
 }
 
 code::-moz-selection {
-  background-color: #EBFC72;
+  background-color: var(--highlight);
 }
 
 code::selection {
-  background-color: #EBFC72;
+  background-color: var(--highlight);
 }
 
 h1::-moz-selection {
-  background-color: #EBFC72;
+  background-color: var(--highlight);
 }
 
 h1::selection {
-  background-color: #EBFC72;
+  background-color: var(--highlight);
 }
 
 h2::-moz-selection {
-  background-color: #EBFC72;
+  background-color: var(--highlight);
 }
 
 h2::selection {
-  background-color: #EBFC72;
+  background-color: var(--highlight);
 }
 
 h3::-moz-selection {
-  background-color: #EBFC72;
+  background-color: var(--highlight);
 }
 
 h3::selection {
-  background-color: #EBFC72;
+  background-color: var(--highlight);
 }
 
 h4::-moz-selection {
-  background-color: #EBFC72;
+  background-color: var(--highlight);
 }
 
 h4::selection {
-  background-color: #EBFC72;
+  background-color: var(--highlight);
 }
 
 h5::-moz-selection {
-  background-color: #EBFC72;
+  background-color: var(--highlight);
 }
 
 h5::selection {
-  background-color: #EBFC72;
+  background-color: var(--highlight);
 }
 
 a::-moz-selection {
-  background-color: #EBFC72;
+  background-color: var(--highlight);
 }
 
 a::selection {
-  background-color: #EBFC72;
+  background-color: var(--highlight);
 }
 
 ul::-moz-selection {
-  background-color: #EBFC72;
+  background-color: var(--highlight);
 }
 
 ul::selection {
-  background-color: #EBFC72;
+  background-color: var(--highlight);
 }
 
 ol::-moz-selection {
-  background-color: #EBFC72;
+  background-color: var(--highlight);
 }
 
 ol::selection {
-  background-color: #EBFC72;
+  background-color: var(--highlight);
 }
 
 li::-moz-selection {
-  background-color: #EBFC72;
+  background-color: var(--highlight);
 }
 
 li::selection {
-  background-color: #EBFC72;
+  background-color: var(--highlight);
 }
 
 img::-moz-selection {
-  background-color: #EBFC72;
+  background-color: var(--highlight);
 }
 
 img::selection {
-  background-color: #EBFC72;
+  background-color: var(--highlight);
 }
 
 figcaption::-moz-selection {
-  background-color: #EBFC72;
+  background-color: var(--highlight);
 }
 
 figcaption::selection {
-  background-color: #EBFC72;
+  background-color: var(--highlight);
 }
+
+/* cursor */
+#cursor {
+  width: 1.875rem;
+  height: 1.875rem;
+  border-radius: 100%;
+  -webkit-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
+  position: fixed;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  -webkit-transform: translate(calc(-50% + 15px), -50%);
+          transform: translate(calc(-50% + 15px), -50%);
+  mix-blend-mode: saturation;
+  background-color: var(--yellow);
+  z-index: 500;
+}
+
+/* making cursor bigger when it hovers link or clicks*/

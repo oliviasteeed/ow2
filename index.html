@@ -6,7 +6,7 @@
     <meta name="viewport" content="" width=device-width, initial-scale="1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="//">
 
-    <title>OliviaWorld*</title>
+    <title>OliviaWorld</title>
 
     <!-- Neue Haas Unica Adobe font -->
     <link rel="stylesheet" href="https://use.typekit.net/vyc0owx.css">
@@ -17,12 +17,11 @@
     <link rel="stylesheet" href="css/colours.css" />
     <link rel="stylesheet" href="css/styles.css" />
 
-    <!-- <script defer src="app/dist/script.js"></script> -->
-
+    <link rel="shortcut icon" href="img/circle.png">
 </head>
 
 
-<body>
+<body id="body" class="">
     <div class="global-container">
 
         <header class="header-bar">
@@ -37,12 +36,12 @@
             <section class="home-landing">
                 <div class="site-title-box">
                     <!-- <h1 class="site-title">OliviaWorld</h1> -->
-                    <img src="img/title3.gif">
+                    <img class="titlegif" id="test-themeclick" src="img/title_light.gif" loop>
                 </div>
 
                 <div class="scrolldown-box">
                     <h4>join the revolution</h4>
-                    <img class="scrolldown-icon" src="img/icons/scrolldown.gif">
+                    <img class="scrolldown-icon" id="scrolldown-gif" src="img/icons/scrolldown_light.gif">
                 </div>
 
             </section>
@@ -53,50 +52,69 @@
                         <h2>Case Studies</h2>
 
                         <div class="project-card">
-                            <a href="html/sap.html" class="project-link">SAP Help Documentation Graphic and Animation Design
+                            <a href="html/sap.html" class="project-link">SAP Help Documentation Multimedia
+                                Design
                                 System</a>
-                            <p class="p-small">Miscellaneous design for SAP Analytics Cloud help documentation</p>
+                                <p class="p-smallest">ux research, visual design, animation, technical writing</p>
+                            <p class="p-small">UX research project resulting in creation of written and multimedia content guidelines for SAP Analytics Cloud help documentation.</p>
                         </div>
 
-                        <div class="project-card">
+                        <div class="project-card" id="betweendreams-hover">
                             <a href="html/between_dreams.html" class="project-link">Between Dreams and Reality</a>
+                            <p class="p-smallest">visual design, art direction, content strategy, animation</p>
                             <p class="p-small">Expressive microsite created to showcase a textile art exhibit through
                                 references
                                 to thematic and
                                 visual themes.</p>
+
+                            <img class="preview-img" id="betweendreams-img" src="img/eyeblink.gif">
                         </div>
 
-                        <div class="project-card">
+                        <div class="project-card" id="dumbcute-hover">
                             <a href="html/dumbcute.html" class="project-link">Dumbcute Branding</a>
+                            <p class="p-smallest">visual design, identity</p>
                             <p class="p-small">Brand identity for personal ceramics business including print and digital
                                 assets.
                             </p>
+
+                            <img class="preview-img" id="dumbcute-img" src="img/dumbcutehover.gif">
                         </div>
 
                         <div class="project-card">
                             <a href="html/healthconnect.html" class="project-link">HealthConnect</a>
-                            <p class="p-small">straight up bad</p>
+                            <p class="p-smallest">ux research, visual design</p>
+                            <p class="p-small">I think this one is boring as hell do I really include it?</p>
                         </div>
 
-                        <div class="project-card">
+                        <div class="project-card" id="runitup-hover">
                             <a href="html/runitup.html" class="project-link">RunItUp</a>
-                            <p class="p-small">this is a coding project</p>
+                            <p class="p-smallest">Java, XML, visual design</p>
+                            <p class="p-small">This is a coding project to prove I can code (I can code by the way).</p>
+
+                            <img class="preview-img" id="runitup-img" src="img/runitup.gif">
                         </div>
                     </section> <!--end of case studies-->
 
                     <section class="home-project-section">
                         <h2>Personal Projects</h2>
-                        <div class="project-card ">
+                        <div class="project-card" id="mytakeaway-hover">
                             <a href="https://mytakeaway.oliviasteed.com" class="project-link">MyTakeaway</a>
+                            <p class="p-smallest">visual design, SCSS, HTML, Javascript</p>
                             <p class="p-small">Website I made to capture highlights, takeaways and reflections on what I
                                 read.
                             </p>
+
+                            <img class="preview-img" id="mytakeaway-img" src="img/mytakeawayhover.gif">
                         </div>
 
-                        <div class="project-card">
+                        <div class="project-card" id="mbintp-hover">
                             <a href="media/My Body Is Not The Project.pdf" class="project-link">My Body Is Not The
                                 Project</a>
-                            <p class="p-small">Essay about personal experience with anorexia and navigating beauty standards.</p>
+                                <p class="p-smallest">writing, visual design</p>
+                            <p class="p-small">Essay about personal experience navigating femininity, beauty
+                                standards, and overcoming disordered eating.</p>
+
+                                <img class="preview-img" id="mbintp-img" src="img/mbintphover.gif">
                         </div>
 
                         <!-- <p class="p-small">Essay about personal experience with anorexia presented in designed print
@@ -105,10 +123,13 @@
                             accompanying interactive microsite.</p>
                     </div> -->
 
-                        <div class="project-card">
+                        <div class="project-card" id="viavia-hover">
                             <a href="https://viaviaandtheband.oliviasteed.com" class="project-link">viavia (and the
                                 band)</a>
+                                <p class="p-smallest">visual design, identity, art direction, photography, SCSS, HTML</p>
                             <p class="p-small">Personal music project debut album collateral and lyrics website.</p>
+
+                            <img class="preview-img" id="viavia-img" src="img/viaviahover.gif">
                         </div>
 
                         <div class="project-card">
@@ -125,20 +146,24 @@
                     <p class="p-large">
                         What do you get when you combine an obsession with visual design and an insatiable appetite
                         for
-                        leaning? You get me and the random projects I make.
+                        learning? You get me and the random projects I make.
                         <br><br>
-                        My name is <strong>Olivia</strong> and I am currently attending SFU as an <em>Interactive Arts and Technology</em> major and
-                        <em>Psychology</em> minor. I love to listen and observe and understand the why, and the why behind
+                        My name is <strong>Olivia</strong> and I am currently attending SFU as an <em>Interactive Arts
+                            and Technology</em> major and
+                        <em>Psychology</em> minor. I love to listen and observe and understand the why, and the why
+                        behind
                         that.
                         <br><br>
-                        I have experience as a <em>graphic designer</em> and multimedia <em>user assistance developer</em>, where I
+                        I have experience as a <em>visual designer,</em> <em> ux researcher,</em> and multimedia <em>user assistance
+                            developer</em>, where I
                         combine my
-                        skills of <strong>visual information sharing</strong> with strong <strong>comprehension, writing</strong> and <strong>narrative</strong>
+                        skills of <strong>visual information sharing</strong> with strong <strong>comprehension,
+                            writing</strong> and <strong>narrative</strong>
                         abilities.
                         <br><br>
                         I believe design is a means to express, connect, educate and inform, and strive to use my
                         power
-                        responsibly in thoughtful contributions to the world
+                        responsibly.
                     </p>
                 </section>
             </div>
@@ -150,6 +175,11 @@
 
     </div> <!--end of global container-->
 
+    <!-- <div id="cursor"></div> -->
+
+    <script src="js/hover.js"></script>
+    <!-- <script src="js/cursor.js"></script> -->
+    <script src="js/themeclick.js"></script>
 
 </body>
 
