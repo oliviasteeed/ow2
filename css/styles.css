@@ -50,9 +50,18 @@
 .light a {
   color: var(--black);
 }
+.light .project-link:hover,
+.light .project-link:focus,
+.light .title-link:hover,
+.light .title-link:focus {
+  color: var(--blue);
+}
+.light .nav-link {
+  color: var(--blue);
+}
 
 .dark {
-  background-color: var(--blue);
+  background-color: var(--green);
 }
 .dark h1 {
   color: var(--offwhite);
@@ -80,6 +89,161 @@
 }
 .dark .nav-link {
   color: var(--red);
+}
+
+.red {
+  background-color: var(--red);
+}
+.red h1 {
+  color: var(--offwhite);
+}
+.red h2 {
+  color: var(--offwhite);
+}
+.red h3 {
+  color: var(--offwhite);
+}
+.red h4 {
+  color: var(--offwhite);
+}
+.red p {
+  color: var(--offwhite);
+}
+.red a {
+  color: var(--offwhite);
+}
+.red .project-link:hover,
+.red .project-link:focus,
+.red .title-link:hover,
+.red .title-link:focus {
+  color: var(--blue);
+}
+.red .nav-link {
+  color: var(--blue);
+}
+
+.green {
+  background-color: var(--green);
+}
+.green h1 {
+  color: var(--offwhite);
+}
+.green h2 {
+  color: var(--offwhite);
+}
+.green h3 {
+  color: var(--offwhite);
+}
+.green h4 {
+  color: var(--offwhite);
+}
+.green p {
+  color: var(--offwhite);
+}
+.green a {
+  color: var(--offwhite);
+}
+.green .project-link:hover,
+.green .project-link:focus,
+.green .title-link:hover,
+.green .title-link:focus {
+  color: var(--red);
+}
+.green .nav-link {
+  color: var(--red);
+}
+
+.blue {
+  background-color: var(--blue);
+}
+.blue h1 {
+  color: var(--offwhite);
+}
+.blue h2 {
+  color: var(--offwhite);
+}
+.blue h3 {
+  color: var(--offwhite);
+}
+.blue h4 {
+  color: var(--offwhite);
+}
+.blue p {
+  color: var(--offwhite);
+}
+.blue a {
+  color: var(--offwhite);
+}
+.blue .project-link:hover,
+.blue .project-link:focus,
+.blue .title-link:hover,
+.blue .title-link:focus {
+  color: var(--red);
+}
+.blue .nav-link {
+  color: var(--red);
+}
+
+.yellow {
+  background-color: var(--yellow);
+}
+.yellow h1 {
+  color: var(--black);
+}
+.yellow h2 {
+  color: var(--black);
+}
+.yellow h3 {
+  color: var(--black);
+}
+.yellow h4 {
+  color: var(--black);
+}
+.yellow p {
+  color: var(--black);
+}
+.yellow a {
+  color: var(--black);
+}
+.yellow .project-link:hover,
+.yellow .project-link:focus,
+.yellow .title-link:hover,
+.yellow .title-link:focus {
+  color: var(--blue);
+}
+.yellow .nav-link {
+  color: var(--blue);
+}
+
+.pink {
+  background-color: var(--pink);
+}
+.pink h1 {
+  color: var(--offwhite);
+}
+.pink h2 {
+  color: var(--offwhite);
+}
+.pink h3 {
+  color: var(--offwhite);
+}
+.pink h4 {
+  color: var(--offwhite);
+}
+.pink p {
+  color: var(--offwhite);
+}
+.pink a {
+  color: var(--offwhite);
+}
+.pink .project-link:hover,
+.pink .project-link:focus,
+.pink .title-link:hover,
+.pink .title-link:focus {
+  color: var(--blue);
+}
+.pink .nav-link {
+  color: var(--blue);
 }
 
 h1 {
@@ -224,8 +388,6 @@ em {
   font-weight: 400;
   text-decoration: none;
   color: var(--blue);
-  -webkit-transition: color ease-in-out 0.3s;
-  transition: color ease-in-out 0.3s;
 }
 
 /* project titles */

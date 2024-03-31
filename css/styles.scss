@@ -30,9 +30,132 @@
     a {
         color: var(--black);
     }
+    .project-link:hover,
+    .project-link:focus,
+    .title-link:hover,
+    .title-link:focus {
+        color: var(--blue);
+    }
+    .nav-link {
+        color: var(--blue);
+    }
 }
 
 .dark {
+    background-color: var(--green);
+
+    h1 {
+        color: var(--offwhite);
+    }
+
+    h2 {
+        color: var(--offwhite);
+    }
+
+    h3 {
+        color: var(--offwhite);
+    }
+
+    h4 {
+        color: var(--offwhite);
+    }
+
+    p {
+        color: var(--offwhite);
+    }
+
+    a {
+        color: var(--offwhite);
+    }
+
+    .project-link:hover,
+    .project-link:focus,
+    .title-link:hover,
+    .title-link:focus {
+        color: var(--red);
+    }
+    .nav-link {
+        color: var(--red);
+    }
+}
+
+.red {
+    background-color: var(--red);
+
+    h1 {
+        color: var(--offwhite);
+    }
+
+    h2 {
+        color: var(--offwhite);
+    }
+
+    h3 {
+        color: var(--offwhite);
+    }
+
+    h4 {
+        color: var(--offwhite);
+    }
+
+    p {
+        color: var(--offwhite);
+    }
+
+    a {
+        color: var(--offwhite);
+    }
+
+    .project-link:hover,
+    .project-link:focus,
+    .title-link:hover,
+    .title-link:focus {
+        color: var(--blue);
+    }
+    .nav-link {
+        color: var(--blue);
+    }
+}
+
+.green {
+    background-color: var(--green);
+
+    h1 {
+        color: var(--offwhite);
+    }
+
+    h2 {
+        color: var(--offwhite);
+    }
+
+    h3 {
+        color: var(--offwhite);
+    }
+
+    h4 {
+        color: var(--offwhite);
+    }
+
+    p {
+        color: var(--offwhite);
+    }
+
+    a {
+        color: var(--offwhite);
+    }
+
+    .project-link:hover,
+    .project-link:focus,
+    .title-link:hover,
+    .title-link:focus {
+        color: var(--red);
+    }
+    .nav-link {
+        color: var(--red);
+    }
+}
+
+.blue {
     background-color: var(--blue);
 
     h1 {
@@ -67,6 +190,82 @@
     }
     .nav-link {
         color: var(--red);
+    }
+}
+
+.yellow {
+    background-color: var(--yellow);
+
+    h1 {
+        color: var(--black);
+    }
+
+    h2 {
+        color: var(--black);
+    }
+
+    h3 {
+        color: var(--black);
+    }
+
+    h4 {
+        color: var(--black);
+    }
+
+    p {
+        color: var(--black);
+    }
+
+    a {
+        color: var(--black);
+    }
+
+    .project-link:hover,
+    .project-link:focus,
+    .title-link:hover,
+    .title-link:focus {
+        color: var(--blue);
+    }
+    .nav-link {
+        color: var(--blue);
+    }
+}
+
+.pink {
+    background-color: var(--pink);
+
+    h1 {
+        color: var(--offwhite);
+    }
+
+    h2 {
+        color: var(--offwhite);
+    }
+
+    h3 {
+        color: var(--offwhite);
+    }
+
+    h4 {
+        color: var(--offwhite);
+    }
+
+    p {
+        color: var(--offwhite);
+    }
+
+    a {
+        color: var(--offwhite);
+    }
+
+    .project-link:hover,
+    .project-link:focus,
+    .title-link:hover,
+    .title-link:focus {
+        color: var(--blue);
+    }
+    .nav-link {
+        color: var(--blue);
     }
 }
 
@@ -254,7 +453,8 @@ em {
     font-weight: 400;
     text-decoration: none;
     color: var(--blue);
-    transition: color ease-in-out 0.3s;
+    // transition: color ease-in-out 0.3s;
+    // transition: color ease-in-out 0.15s;
 }
 
 /* project titles */
