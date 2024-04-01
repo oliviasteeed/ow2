@@ -99,7 +99,7 @@
 }
 
 .red {
-  background-color: var(--black);
+  background-color: var(--red);
 }
 .red h1 {
   color: var(--offwhite);
@@ -123,10 +123,10 @@
 .red .project-link:focus,
 .red .title-link:hover,
 .red .title-link:focus {
-  color: var(--red);
+  color: var(--blue);
 }
 .red .nav-link {
-  color: var(--red);
+  color: var(--blue);
 }
 .red figcaption {
   color: var(--offwhite);
@@ -201,37 +201,37 @@
 }
 
 .yellow {
-  background-color: var(--yellow);
+  background-color: var(--black);
 }
 .yellow h1 {
-  color: var(--black);
+  color: var(--offwhite);
 }
 .yellow h2 {
-  color: var(--black);
+  color: var(--offwhite);
 }
 .yellow h3 {
-  color: var(--black);
+  color: var(--offwhite);
 }
 .yellow h4 {
-  color: var(--black);
+  color: var(--offwhite);
 }
 .yellow p {
-  color: var(--black);
+  color: var(--offwhite);
 }
 .yellow a {
-  color: var(--black);
+  color: var(--offwhite);
 }
 .yellow .project-link:hover,
 .yellow .project-link:focus,
 .yellow .title-link:hover,
 .yellow .title-link:focus {
-  color: var(--blue);
+  color: var(--red);
 }
 .yellow .nav-link {
-  color: var(--blue);
+  color: var(--red);
 }
 .yellow figcaption {
-  color: var(--black);
+  color: var(--offwhite);
 }
 
 .pink {
@@ -424,8 +424,6 @@ em {
   font-style: normal;
   text-decoration: none;
   color: var(--black);
-  -webkit-transition: color ease-in-out 0.3s;
-  transition: color ease-in-out 0.3s;
 }
 
 /* site title link */
@@ -439,8 +437,6 @@ em {
   font-style: normal;
   color: var(--black);
   text-decoration: none;
-  -webkit-transition: color ease-in-out 0.3s;
-  transition: color ease-in-out 0.3s;
 }
 
 .project-link:hover,
@@ -476,6 +472,12 @@ em {
 
 #dc-img {
   width: 9.375rem;
+}
+
+#sap-img {
+  width: 6.25rem;
+  margin: 0;
+  border-radius: 0;
 }
 
 /* highlight colour */
@@ -608,24 +610,6 @@ span::selection {
 }
 
 /* cursor */
-#cursor {
-  width: 1.875rem;
-  height: 1.875rem;
-  border-radius: 100%;
-  -webkit-transition: all 200ms ease-out;
-  transition: all 200ms ease-out;
-  position: fixed;
-  pointer-events: none;
-  left: 0;
-  top: 0;
-  -webkit-transform: translate(calc(-50% + 15px), -50%);
-          transform: translate(calc(-50% + 15px), -50%);
-  mix-blend-mode: saturation;
-  background-color: var(--yellow);
-  z-index: 500;
-}
-
-/* making cursor bigger when it hovers link or clicks*/
 .selected-border {
   border: 1px solid var(--black);
 }
@@ -659,7 +643,7 @@ span::selection {
   width: 0.625rem;
   height: 0.625rem;
   border-radius: 100%;
-  background-color: var(--yellow);
+  background-color: var(--black);
 }
 
 .pink-button {
@@ -674,4 +658,14 @@ span::selection {
   height: 0.625rem;
   border-radius: 100%;
   background-color: var(--green);
+}
+
+iframe {
+  border-radius: 8px;
+  border: black 1px solid;
+  margin-bottom: 0.625rem;
+}
+
+img {
+  margin-bottom: 0.625rem;
 }

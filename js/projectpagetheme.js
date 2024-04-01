@@ -35,7 +35,8 @@ else if (theme == 'blue'){
 }
 else if (theme == 'yellow'){
     body.classList.add('yellow');
-    closebutton.src = '../img/icons/xicon_dark.png'; // Change to dark x
+    // closebutton.src = '../img/icons/xicon_dark.png'; // Change to dark x
+    closebutton.src = '../img/icons/xicon.png'; // Change to light x
 }
 else if (theme == 'pink'){
     body.classList.add('pink');
@@ -161,7 +162,8 @@ yellow.addEventListener('click', function() {
         body.classList.add('yellow');
     }
     localStorage.setItem('theme', 'yellow');
-    closebutton.src = '../img/icons/xicon_dark.png'; // Change to dark x
+    // closebutton.src = '../img/icons/xicon_dark.png'; // Change to dark x
+    closebutton.src = '../img/icons/xicon.png'; // Change to light x
     console.log('yellow');
 });
 

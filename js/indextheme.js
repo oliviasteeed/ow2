@@ -41,8 +41,10 @@ else if (theme == 'blue'){
 }
 else if (theme == 'yellow'){
     body.classList.add('yellow');
-    image.src = 'img/title_light.gif'; // Change to dark lines
-    scrolldownimage.src = 'img/icons/scrolldown_light.gif';
+    image.src = 'img/title_dark.gif'; // Change to light lines
+    scrolldownimage.src = 'img/icons/scrolldown_dark.gif'
+    // image.src = 'img/title_light.gif'; // Change to dark lines
+    // scrolldownimage.src = 'img/icons/scrolldown_light.gif';
 }
 else if (theme == 'pink'){
     body.classList.add('pink');
@@ -169,8 +171,10 @@ yellow.addEventListener('click', function() {
         body.classList.remove('green');
         body.classList.add('yellow');
     }
-    image.src = 'img/title_light.gif'; // Change to dark lines
-    scrolldownimage.src = 'img/icons/scrolldown_light.gif';
+    // image.src = 'img/title_light.gif'; // Change to dark lines
+    // scrolldownimage.src = 'img/icons/scrolldown_light.gif';
+    image.src = 'img/title_dark.gif'; // Change to light lines
+    scrolldownimage.src = 'img/icons/scrolldown_dark.gif'
     localStorage.setItem('theme', 'yellow');
     console.log('yellow');
 });

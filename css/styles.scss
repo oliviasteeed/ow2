@@ -86,7 +86,7 @@
 }
 
 .red {
-    background-color: var(--black);
+    background-color: var(--red);
 
     h1 {
         color: var(--offwhite);
@@ -116,10 +116,10 @@
     .project-link:focus,
     .title-link:hover,
     .title-link:focus {
-        color: var(--red);
+        color: var(--blue);
     }
     .nav-link {
-        color: var(--red);
+        color: var(--blue);
     }
     figcaption{
         color: var(--offwhite);
@@ -209,45 +209,86 @@
 }
 
 .yellow {
-    background-color: var(--yellow);
+    background-color: var(--black);
 
     h1 {
-        color: var(--black);
+        color: var(--offwhite);
     }
 
     h2 {
-        color: var(--black);
+        color: var(--offwhite);
     }
 
     h3 {
-        color: var(--black);
+        color: var(--offwhite);
     }
 
     h4 {
-        color: var(--black);
+        color: var(--offwhite);
     }
 
     p {
-        color: var(--black);
+        color: var(--offwhite);
     }
 
     a {
-        color: var(--black);
+        color: var(--offwhite);
     }
 
     .project-link:hover,
     .project-link:focus,
     .title-link:hover,
     .title-link:focus {
-        color: var(--blue);
+        color: var(--red);
     }
     .nav-link {
-        color: var(--blue);
+        color: var(--red);
     }
     figcaption{
-        color: var(--black);
+        color: var(--offwhite);
     }
 }
+
+// .yellow {
+//     background-color: var(--black);
+
+//     h1 {
+//         color: var(--black);
+//     }
+
+//     h2 {
+//         color: var(--black);
+//     }
+
+//     h3 {
+//         color: var(--black);
+//     }
+
+//     h4 {
+//         color: var(--black);
+//     }
+
+//     p {
+//         color: var(--black);
+//     }
+
+//     a {
+//         color: var(--black);
+//     }
+
+//     .project-link:hover,
+//     .project-link:focus,
+//     .title-link:hover,
+//     .title-link:focus {
+//         color: var(--blue);
+//     }
+//     .nav-link {
+//         color: var(--blue);
+//     }
+//     figcaption{
+//         color: var(--black);
+//     }
+// }
 
 .pink {
     background-color: var(--pink);
@@ -490,7 +531,7 @@ em {
     font-style: normal;
     text-decoration: none;
     color: var(--black);
-    transition: color ease-in-out 0.3s;
+    // transition: color ease-in-out 0.3s;
 }
 
 /* site title link */
@@ -504,7 +545,7 @@ em {
     font-style: normal;
     color: var(--black);
     text-decoration: none;
-    transition: color ease-in-out 0.3s;
+    // transition: color ease-in-out 0.3s;
 }
 
 .project-link:hover,
@@ -548,6 +589,12 @@ em {
 
 #dc-img{
     width: rem(150);
+}
+
+#sap-img{
+    width: rem(100);
+    margin:0;
+    border-radius:0;
 }
 
 
@@ -626,26 +673,21 @@ span::selection {
 
 
 /* cursor */
-    #cursor {
-        width: rem(30);
-        height: rem(30);
-        border-radius: 100%;
-        transition: all 200ms ease-out;
-        position: fixed;
-        pointer-events: none;
-        left: 0;
-        top: 0;
-        transform: translate(calc(-50% + 15px), -50%);
-        mix-blend-mode: saturation;
-        background-color: var(--yellow);
-        z-index: 500;
-    }
+    // #cursor {
+    //     width: rem(30);
+    //     height: rem(30);
+    //     border-radius: 100%;
+    //     transition: all 200ms ease-out;
+    //     position: fixed;
+    //     pointer-events: none;
+    //     left: 0;
+    //     top: 0;
+    //     transform: translate(calc(-50% + 15px), -50%);
+    //     mix-blend-mode: saturation;
+    //     background-color: var(--yellow);
+    //     z-index: 500;
+    // }
 
-    /* making cursor bigger when it hovers link or clicks*/
-//     .cursor-expand {
-//         width: 80px;
-//         height: 80px;
-// }
 
 .selected-border{
     border: 1px solid var(--black);
@@ -680,7 +722,7 @@ span::selection {
     width: rem(10);
     height: rem(10);
     border-radius: 100%;
-    background-color: var(--yellow);
+    background-color: var(--black);
 }
 
 .pink-button{
@@ -695,4 +737,14 @@ span::selection {
     height: rem(10);
     border-radius: 100%;
     background-color: var(--green);
+}
+
+iframe {
+    border-radius: 8px;
+    border: black 1px solid;
+    margin-bottom:rem(10);
+}
+
+img{
+    margin-bottom:rem(10);
 }
