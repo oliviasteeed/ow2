@@ -4,7 +4,21 @@
 
 // themes
 
+.title-bar{
+    position:fixed;
+    width:65vw;
+    height:rem(55);
+    top:0;
+    left:50vw;
+    // background-color: var(--offwhite);
+    transform: translate(-50%, 0);
+}
+
 .light {
+    .title-bar{
+        background-color: var(--offwhite);
+    }
+
     background-color: var(--offwhite);
 
     h1 {
@@ -45,6 +59,10 @@
 }
 
 .dark {
+    .title-bar{
+        background-color: var(--black);
+    }
+
     background-color: var(--black);
 
     h1 {
@@ -86,6 +104,10 @@
 }
 
 .red {
+    .title-bar{
+        background-color: var(--red);
+    }
+
     background-color: var(--red);
 
     h1 {
@@ -127,6 +149,10 @@
 }
 
 .green {
+    .title-bar{
+        background-color: var(--green);
+    }
+
     background-color: var(--green);
 
     h1 {
@@ -168,6 +194,10 @@
 }
 
 .blue {
+    .title-bar{
+        background-color: var(--blue);
+    }
+
     background-color: var(--blue);
 
     h1 {
@@ -209,6 +239,10 @@
 }
 
 .yellow {
+    .title-bar{
+        background-color: var(--black);
+    }
+
     background-color: var(--black);
 
     h1 {
@@ -291,6 +325,10 @@
 // }
 
 .pink {
+    .title-bar{
+        background-color: var(--pink);
+    }
+
     background-color: var(--pink);
 
     h1 {
@@ -342,7 +380,7 @@ h1 {
     padding: 0;
     font-family: "alpina-thin", serif;
     // font-size: rem(48);
-    font-size: rem(64);
+    font-size: rem(55);
     // letter-spacing: -4px;
     letter-spacing: -5px;
     font-weight: normal;
@@ -748,3 +786,7 @@ iframe {
 img{
     margin-bottom:rem(10);
 }
+
+
+
+

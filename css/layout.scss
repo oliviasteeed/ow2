@@ -80,12 +80,6 @@
     min-width: rem(200);
 }
 
-
-.titlegif {
-    // border: solid brown 1px;
-    max-width: rem(650);
-}
-
 .home-about {
     width: 60vw;
     // border: 1px solid green;
@@ -98,11 +92,13 @@
 .site-title-box {
     // border: 1px solid pink;
     height: 65vh;
+    // width:50vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
+//title and gif are inside this
 .scrolldown-box {
     display: flex;
     flex-direction: column;
@@ -110,6 +106,49 @@
     align-items: center;
     // gap:0.25rem;
 }
+
+//PARRALAX SCROLL
+.titlegif {
+    // border: solid brown 1px;
+    max-width: rem(400);
+    position:relative;
+    top: -225px;
+    // top:-286px;
+    left: -100px;
+    // border: cyan 1px solid;
+    z-index:1;
+}
+
+.o-scrollup{
+    position:relative;
+    top: -61px;
+    left: -94px;
+}
+
+
+//parrallax scroll (pls bby) (put this in another file when done?)
+#scrolling-text{
+    // position:fixed;
+    // bottom: 53vh;
+    // left: 45vw;
+
+    // border: orange 1px solid;
+}
+
+//relative to this
+.title-scrollup{
+    // border: red 1px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height:rem(80);
+    z-index:2;
+}
+
+// .o-scrollup{
+//     opacity:0;
+// }
+
 
 
 /* project pages */

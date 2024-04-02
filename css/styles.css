@@ -30,7 +30,20 @@
   --pink: #FC72CA;
 }
 
+.title-bar {
+  position: fixed;
+  width: 65vw;
+  height: 3.4375rem;
+  top: 0;
+  left: 50vw;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
 .light {
+  background-color: var(--offwhite);
+}
+.light .title-bar {
   background-color: var(--offwhite);
 }
 .light h1 {
@@ -67,6 +80,9 @@
 .dark {
   background-color: var(--black);
 }
+.dark .title-bar {
+  background-color: var(--black);
+}
 .dark h1 {
   color: var(--offwhite);
 }
@@ -99,6 +115,9 @@
 }
 
 .red {
+  background-color: var(--red);
+}
+.red .title-bar {
   background-color: var(--red);
 }
 .red h1 {
@@ -135,6 +154,9 @@
 .green {
   background-color: var(--green);
 }
+.green .title-bar {
+  background-color: var(--green);
+}
 .green h1 {
   color: var(--offwhite);
 }
@@ -167,6 +189,9 @@
 }
 
 .blue {
+  background-color: var(--blue);
+}
+.blue .title-bar {
   background-color: var(--blue);
 }
 .blue h1 {
@@ -203,6 +228,9 @@
 .yellow {
   background-color: var(--black);
 }
+.yellow .title-bar {
+  background-color: var(--black);
+}
 .yellow h1 {
   color: var(--offwhite);
 }
@@ -235,6 +263,9 @@
 }
 
 .pink {
+  background-color: var(--pink);
+}
+.pink .title-bar {
   background-color: var(--pink);
 }
 .pink h1 {
@@ -272,7 +303,7 @@ h1 {
   margin: 0;
   padding: 0;
   font-family: "alpina-thin", serif;
-  font-size: 4rem;
+  font-size: 3.4375rem;
   letter-spacing: -5px;
   font-weight: normal;
   font-style: normal;
