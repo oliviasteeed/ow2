@@ -156,10 +156,8 @@
   z-index: 1;
 }
 
-.o-scrollup {
-  position: relative;
-  top: -61px;
-  left: -94px;
+#o-scrollup {
+  opacity: 0;
 }
 
 .title-scrollup {
