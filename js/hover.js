@@ -54,21 +54,21 @@ betweendreamshover.onmousemove = function (e){
 }
 
 // runitup hover image //
-var runitupimg = document.getElementById("runitup-img");
-var runituphover = document.getElementById("runitup-hover");
+// var runitupimg = document.getElementById("runitup-img");
+// var runituphover = document.getElementById("runitup-hover");
 
-runituphover.onmouseenter = function (e){
-    runitupimg.style.display="block";
-}
+// runituphover.onmouseenter = function (e){
+//     runitupimg.style.display="block";
+// }
 
-runituphover.onmouseleave = function (e){
-    runitupimg.style.display="none";
-}
+// runituphover.onmouseleave = function (e){
+//     runitupimg.style.display="none";
+// }
 
-runituphover.onmousemove = function (e){
-    runitupimg.style.left = e.pageX + 5 + "px";
-    runitupimg.style.top = e.pageY - 30 + "px";
-}
+// runituphover.onmousemove = function (e){
+//     runitupimg.style.left = e.pageX + 5 + "px";
+//     runitupimg.style.top = e.pageY - 30 + "px";
+// }
 
 //PERSONAL PROJECTS //
 
@@ -103,7 +103,7 @@ viaviahover.onmouseleave = function (e){
 
 viaviahover.onmousemove = function (e){
     viaviaimg.style.left = e.pageX + 3 + "px";
-    viaviaimg.style.top = e.pageY - 100 + "px";
+    viaviaimg.style.top = e.pageY - 150 + "px";
 }
 
 // my body is not the project hover image //
@@ -138,4 +138,21 @@ dcceramicshover.onmouseleave = function (e){
 dcceramicshover.onmousemove = function (e){
     dcceramicsimg.style.left = e.pageX + 3  + "px";
     dcceramicsimg.style.top = e.pageY - 100 + "px";
+}
+
+// oliviaworld hover image //
+var thisimg = document.getElementById("this-img");
+var thishover = document.getElementById("this-hover");
+
+thishover.onmouseenter = function (e){
+    thisimg.style.display="block";
+}
+
+thishover.onmouseleave = function (e){
+    thisimg.style.display="none";
+}
+
+thishover.onmousemove = function (e){
+    thisimg.style.left = e.pageX + 3 + "px";
+    thisimg.style.top = e.pageY - 60 + "px";
 }

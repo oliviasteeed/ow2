@@ -28,6 +28,7 @@
   --yellow: #FFF620;
   --red: #FF5C00;
   --pink: #FC72CA;
+  --purple: #6D09AB;
 }
 
 .title-bar {
@@ -44,6 +45,9 @@
   background-color: var(--offwhite);
 }
 .light .title-bar {
+  background-color: var(--offwhite);
+}
+.light .header-bar {
   background-color: var(--offwhite);
 }
 .light h1 {
@@ -64,10 +68,22 @@
 .light a {
   color: var(--black);
 }
-.light .project-link:hover,
-.light .project-link:focus,
-.light .title-link:hover,
-.light .title-link:focus {
+.light .project-card:hover,
+.light .project-card:focus,
+.light .title-card:hover,
+.light .title-card:focus {
+  cursor: pointer;
+}
+.light .project-card:hover a,
+.light .project-card:focus a,
+.light .title-card:hover a,
+.light .title-card:focus a {
+  color: var(--blue);
+}
+.light .project-card:hover p,
+.light .project-card:focus p,
+.light .title-card:hover p,
+.light .title-card:focus p {
   color: var(--blue);
 }
 .light .nav-link {
@@ -81,6 +97,9 @@
   background-color: var(--black);
 }
 .dark .title-bar {
+  background-color: var(--black);
+}
+.dark .header-bar {
   background-color: var(--black);
 }
 .dark h1 {
@@ -101,10 +120,22 @@
 .dark a {
   color: var(--offwhite);
 }
-.dark .project-link:hover,
-.dark .project-link:focus,
-.dark .title-link:hover,
-.dark .title-link:focus {
+.dark .project-card:hover,
+.dark .project-card:focus,
+.dark .title-card:hover,
+.dark .title-card:focus {
+  cursor: pointer;
+}
+.dark .project-card:hover a,
+.dark .project-card:focus a,
+.dark .title-card:hover a,
+.dark .title-card:focus a {
+  color: var(--red);
+}
+.dark .project-card:hover p,
+.dark .project-card:focus p,
+.dark .title-card:hover p,
+.dark .title-card:focus p {
   color: var(--red);
 }
 .dark .nav-link {
@@ -118,6 +149,9 @@
   background-color: var(--red);
 }
 .red .title-bar {
+  background-color: var(--red);
+}
+.red .header-bar {
   background-color: var(--red);
 }
 .red h1 {
@@ -138,10 +172,22 @@
 .red a {
   color: var(--offwhite);
 }
-.red .project-link:hover,
-.red .project-link:focus,
-.red .title-link:hover,
-.red .title-link:focus {
+.red .project-card:hover,
+.red .project-card:focus,
+.red .title-card:hover,
+.red .title-card:focus {
+  cursor: pointer;
+}
+.red .project-card:hover a,
+.red .project-card:focus a,
+.red .title-card:hover a,
+.red .title-card:focus a {
+  color: var(--blue);
+}
+.red .project-card:hover p,
+.red .project-card:focus p,
+.red .title-card:hover p,
+.red .title-card:focus p {
   color: var(--blue);
 }
 .red .nav-link {
@@ -155,6 +201,9 @@
   background-color: var(--green);
 }
 .green .title-bar {
+  background-color: var(--green);
+}
+.green .header-bar {
   background-color: var(--green);
 }
 .green h1 {
@@ -175,10 +224,22 @@
 .green a {
   color: var(--offwhite);
 }
-.green .project-link:hover,
-.green .project-link:focus,
-.green .title-link:hover,
-.green .title-link:focus {
+.green .project-card:hover,
+.green .project-card:focus,
+.green .title-card:hover,
+.green .title-card:focus {
+  cursor: pointer;
+}
+.green .project-card:hover a,
+.green .project-card:focus a,
+.green .title-card:hover a,
+.green .title-card:focus a {
+  color: var(--red);
+}
+.green .project-card:hover p,
+.green .project-card:focus p,
+.green .title-card:hover p,
+.green .title-card:focus p {
   color: var(--red);
 }
 .green .nav-link {
@@ -192,6 +253,9 @@
   background-color: var(--blue);
 }
 .blue .title-bar {
+  background-color: var(--blue);
+}
+.blue .header-bar {
   background-color: var(--blue);
 }
 .blue h1 {
@@ -212,10 +276,22 @@
 .blue a {
   color: var(--offwhite);
 }
-.blue .project-link:hover,
-.blue .project-link:focus,
-.blue .title-link:hover,
-.blue .title-link:focus {
+.blue .project-card:hover,
+.blue .project-card:focus,
+.blue .title-card:hover,
+.blue .title-card:focus {
+  cursor: pointer;
+}
+.blue .project-card:hover a,
+.blue .project-card:focus a,
+.blue .title-card:hover a,
+.blue .title-card:focus a {
+  color: var(--red);
+}
+.blue .project-card:hover p,
+.blue .project-card:focus p,
+.blue .title-card:hover p,
+.blue .title-card:focus p {
   color: var(--red);
 }
 .blue .nav-link {
@@ -229,6 +305,9 @@
   background-color: var(--black);
 }
 .yellow .title-bar {
+  background-color: var(--black);
+}
+.yellow .header-bar {
   background-color: var(--black);
 }
 .yellow h1 {
@@ -249,10 +328,22 @@
 .yellow a {
   color: var(--offwhite);
 }
-.yellow .project-link:hover,
-.yellow .project-link:focus,
-.yellow .title-link:hover,
-.yellow .title-link:focus {
+.yellow .project-card:hover,
+.yellow .project-card:focus,
+.yellow .title-card:hover,
+.yellow .title-card:focus {
+  cursor: pointer;
+}
+.yellow .project-card:hover a,
+.yellow .project-card:focus a,
+.yellow .title-card:hover a,
+.yellow .title-card:focus a {
+  color: var(--red);
+}
+.yellow .project-card:hover p,
+.yellow .project-card:focus p,
+.yellow .title-card:hover p,
+.yellow .title-card:focus p {
   color: var(--red);
 }
 .yellow .nav-link {
@@ -266,6 +357,9 @@
   background-color: var(--pink);
 }
 .pink .title-bar {
+  background-color: var(--pink);
+}
+.pink .header-bar {
   background-color: var(--pink);
 }
 .pink h1 {
@@ -286,10 +380,22 @@
 .pink a {
   color: var(--offwhite);
 }
-.pink .project-link:hover,
-.pink .project-link:focus,
-.pink .title-link:hover,
-.pink .title-link:focus {
+.pink .project-card:hover,
+.pink .project-card:focus,
+.pink .title-card:hover,
+.pink .title-card:focus {
+  cursor: pointer;
+}
+.pink .project-card:hover a,
+.pink .project-card:focus a,
+.pink .title-card:hover a,
+.pink .title-card:focus a {
+  color: var(--blue);
+}
+.pink .project-card:hover p,
+.pink .project-card:focus p,
+.pink .title-card:hover p,
+.pink .title-card:focus p {
   color: var(--blue);
 }
 .pink .nav-link {
@@ -299,12 +405,22 @@
   color: var(--offwhite);
 }
 
-h1 {
+#scrolling-text {
   margin: 0;
   padding: 0;
   font-family: "alpina-thin", serif;
   font-size: 3.4375rem;
   letter-spacing: -5px;
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-family: "alpina-thin", serif;
+  font-size: 3.4375rem;
+  letter-spacing: -0.203125rem;
   font-weight: normal;
   font-style: normal;
 }
@@ -358,9 +474,9 @@ h4 {
   padding: 0;
   font-family: "neue-haas-unica", sans-serif;
   font-size: 1rem;
-  letter-spacing: -0.25px;
-  line-height: 130%;
-  font-weight: 400;
+  letter-spacing: -0.01px;
+  line-height: 145%;
+  font-weight: 300;
   font-style: normal;
 }
 
@@ -371,7 +487,7 @@ h4 {
   font-size: 1.125rem;
   letter-spacing: -0.25px;
   line-height: 130%;
-  font-weight: 600;
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -382,8 +498,8 @@ h4 {
   font-size: 2rem;
   letter-spacing: -0.5px;
   line-height: 130%;
-  font-weight: 400;
   font-style: normal;
+  font-weight: 400;
 }
 
 .p-medium {
@@ -391,7 +507,7 @@ h4 {
   padding: 0;
   font-family: "neue-haas-unica", sans-serif;
   font-size: 1.5rem;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: -0.25px;
   line-height: 130%;
   font-style: normal;
@@ -426,7 +542,7 @@ em {
   font-size: 2rem;
   letter-spacing: -0.5px;
   line-height: 130%;
-  font-weight: 600;
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -470,13 +586,6 @@ em {
   text-decoration: none;
 }
 
-.project-link:hover,
-.project-link:focus,
-.title-link:hover,
-.title-link:focus {
-  color: var(--blue);
-}
-
 .scrolldown-icon {
   width: 2.5rem;
 }
@@ -494,11 +603,11 @@ em {
 }
 
 #mytakeaway-img {
-  width: 9.375rem;
+  width: 8.75rem;
 }
 
 #viavia-img {
-  width: 10rem;
+  width: 12.5rem;
 }
 
 #dc-img {
@@ -509,6 +618,14 @@ em {
   width: 6.25rem;
   margin: 0;
   border-radius: 0;
+}
+
+#mbintp-img {
+  width: 6.25rem;
+}
+
+#this-img {
+  width: 8.125rem;
 }
 
 /* highlight colour */
