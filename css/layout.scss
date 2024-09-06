@@ -402,9 +402,13 @@ footer {
 .img-flexbox-row{
     display:flex;
     flex-direction:row;
-    justify-content: space-between;
+    align-items: space-between;
+    gap:1rem;
+    // border: solid 1px orange;
 
     img{
         flex:1;
+        width:30vw;
+        // border: solid 1px blue;
     }
 }
