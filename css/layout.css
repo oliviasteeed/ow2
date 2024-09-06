@@ -32,7 +32,6 @@
       -ms-flex-direction: row;
           flex-direction: row;
   gap: 0.5rem;
-  border: plum 1px solid;
   width: 105px;
 }
 
