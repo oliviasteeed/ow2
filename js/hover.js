@@ -173,3 +173,22 @@ thishover.onmousemove = function (e){
     thisimg.style.left = e.pageX + 3 + "px";
     thisimg.style.top = e.pageY - 60 + "px";
 }
+
+
+// on my name //
+var oliviaimg = document.getElementById("olivia-img");
+var oliviahover = document.getElementById("olivia-hover");
+
+oliviahover.onmouseenter = function (e){
+    oliviaimg.style.display="block";
+    console.log("hi");
+}
+
+oliviahover.onmouseleave = function (e){
+    oliviaimg.style.display="none";
+}
+
+oliviahover.onmousemove = function (e){
+    oliviaimg.style.left = e.pageX + 20 + "px";
+    oliviaimg.style.top = e.pageY - 70 + "px";
+}
