@@ -48,8 +48,12 @@
         color: var(--black);
     }
 
-    a {
+    li {
         color: var(--black);
+    }
+
+    a {
+        color: var(--blue);
     }
 
     // .project-link:hover,
@@ -112,6 +116,10 @@
     }
 
     p {
+        color: var(--offwhite);
+    }
+
+    li {
         color: var(--offwhite);
     }
 
@@ -178,6 +186,10 @@
         color: var(--offwhite);
     }
 
+    li {
+        color: var(--offwhite);
+    }
+
     p {
         color: var(--offwhite);
     }
@@ -241,6 +253,10 @@
     }
 
     h4 {
+        color: var(--offwhite);
+    }
+
+    li {
         color: var(--offwhite);
     }
 
@@ -311,6 +327,10 @@
         color: var(--offwhite);
     }
 
+    li {
+        color: var(--offwhite);
+    }
+
     p {
         color: var(--offwhite);
     }
@@ -375,6 +395,10 @@
     }
 
     h4 {
+        color: var(--offwhite);
+    }
+
+    li {
         color: var(--offwhite);
     }
 
@@ -486,6 +510,10 @@
         color: var(--offwhite);
     }
 
+    li {
+        color: var(--offwhite);
+    }
+
     p {
         color: var(--offwhite);
     }
@@ -542,6 +570,9 @@
     font-style: normal;
 }
 
+b{
+    font-weight: 600;
+}
 
 h1 {
     margin: 0;
@@ -660,10 +691,10 @@ li {
     margin: 0;
     padding: 0;
     font-family: "neue-haas-unica", sans-serif;
-    font-weight: 500;
-    font-size: rem(24);
-    letter-spacing: -0.1px;
-    line-height: 120%;
+    font-size: rem(16);
+    letter-spacing: -0.01px;
+    line-height: 145%;
+    font-weight: 300;
     font-style: normal;
 }
 
@@ -735,16 +766,29 @@ em {
 
 /* project titles */
 .project-link {
+    // margin: 0;
+    // padding: 0;
+    // font-family: "neue-haas-unica", sans-serif;
+    // font-weight: 500;
+    // font-size: rem(24);
+    // letter-spacing: -0.5px;
+    // line-height: 100%;
+    // font-style: normal;
+    // text-decoration: none;
+    // color: var(--black);
+
     margin: 0;
     padding: 0;
     font-family: "neue-haas-unica", sans-serif;
-    font-weight: 500;
-    font-size: rem(24);
-    letter-spacing: -0.5px;
-    line-height: 100%;
+    font-size: rem(20);
+    letter-spacing: -1px;
     font-style: normal;
+    font-weight: 400;
     text-decoration: none;
-    color: var(--black);
+    color: var(--blue);
+
+
+
     // transition: color ease-in-out 0.3s;
 }
 
@@ -818,18 +862,20 @@ em {
     width: rem(150);
 }
 
-#sap-img {
-    width: rem(100);
-    margin: 0;
-    border-radius: 0;
-}
-
 #mbintp-img {
     width: rem(100);
 }
 
 #this-img {
     width: rem(130);
+}
+
+#sapresearch-img {
+    width: rem(150);
+}
+
+#sapua-img {
+    width: rem(150);
 }
 
 
@@ -980,6 +1026,14 @@ iframe {
     margin-bottom: rem(10);
 }
 
-img {
-    margin-bottom: rem(10);
+
+
+
+// img {
+//     margin-bottom: rem(5);
+// }
+
+//for white bg diagram images to have consistent sizing
+.img-multiply{
+    mix-blend-mode: multiply;
 }

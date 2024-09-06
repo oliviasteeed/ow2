@@ -65,8 +65,11 @@
 .light p {
   color: var(--black);
 }
-.light a {
+.light li {
   color: var(--black);
+}
+.light a {
+  color: var(--blue);
 }
 .light .project-card:hover,
 .light .project-card:focus,
@@ -117,6 +120,9 @@
 .dark p {
   color: var(--offwhite);
 }
+.dark li {
+  color: var(--offwhite);
+}
 .dark a {
   color: var(--offwhite);
 }
@@ -164,6 +170,9 @@
   color: var(--offwhite);
 }
 .red h4 {
+  color: var(--offwhite);
+}
+.red li {
   color: var(--offwhite);
 }
 .red p {
@@ -218,6 +227,9 @@
 .green h4 {
   color: var(--offwhite);
 }
+.green li {
+  color: var(--offwhite);
+}
 .green p {
   color: var(--offwhite);
 }
@@ -268,6 +280,9 @@
   color: var(--offwhite);
 }
 .blue h4 {
+  color: var(--offwhite);
+}
+.blue li {
   color: var(--offwhite);
 }
 .blue p {
@@ -322,6 +337,9 @@
 .yellow h4 {
   color: var(--offwhite);
 }
+.yellow li {
+  color: var(--offwhite);
+}
 .yellow p {
   color: var(--offwhite);
 }
@@ -374,6 +392,9 @@
 .pink h4 {
   color: var(--offwhite);
 }
+.pink li {
+  color: var(--offwhite);
+}
 .pink p {
   color: var(--offwhite);
 }
@@ -413,6 +434,10 @@
   letter-spacing: -5px;
   font-weight: normal;
   font-style: normal;
+}
+
+b {
+  font-weight: 600;
 }
 
 h1 {
@@ -517,10 +542,10 @@ li {
   margin: 0;
   padding: 0;
   font-family: "neue-haas-unica", sans-serif;
-  font-weight: 500;
-  font-size: 1.5rem;
-  letter-spacing: -0.1px;
-  line-height: 120%;
+  font-size: 1rem;
+  letter-spacing: -0.01px;
+  line-height: 145%;
+  font-weight: 300;
   font-style: normal;
 }
 
@@ -564,13 +589,12 @@ em {
   margin: 0;
   padding: 0;
   font-family: "neue-haas-unica", sans-serif;
-  font-weight: 500;
-  font-size: 1.5rem;
-  letter-spacing: -0.5px;
-  line-height: 100%;
+  font-size: 1.25rem;
+  letter-spacing: -1px;
   font-style: normal;
+  font-weight: 400;
   text-decoration: none;
-  color: var(--black);
+  color: var(--blue);
 }
 
 /* site title link */
@@ -614,18 +638,20 @@ em {
   width: 9.375rem;
 }
 
-#sap-img {
-  width: 6.25rem;
-  margin: 0;
-  border-radius: 0;
-}
-
 #mbintp-img {
   width: 6.25rem;
 }
 
 #this-img {
   width: 8.125rem;
+}
+
+#sapresearch-img {
+  width: 9.375rem;
+}
+
+#sapua-img {
+  width: 9.375rem;
 }
 
 /* highlight colour */
@@ -814,6 +840,6 @@ iframe {
   margin-bottom: 0.625rem;
 }
 
-img {
-  margin-bottom: 0.625rem;
+.img-multiply {
+  mix-blend-mode: multiply;
 }

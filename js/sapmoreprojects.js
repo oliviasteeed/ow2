@@ -15,19 +15,36 @@ dumbcutehover.onmousemove = function (e){
     dumbcuteimg.style.top = e.pageY - 50 + "px";
 }
 
-// between dreams hover image //
-var betweendreamsimg = document.getElementById("betweendreams-img");
-var betweendreamshover = document.getElementById("betweendreams-hover");
+// // between dreams hover image //
+// var betweendreamsimg = document.getElementById("betweendreams-img");
+// var betweendreamshover = document.getElementById("betweendreams-hover");
 
-betweendreamshover.onmouseenter = function (e){
-    betweendreamsimg.style.display="block";
+// betweendreamshover.onmouseenter = function (e){
+//     betweendreamsimg.style.display="block";
+// }
+
+// betweendreamshover.onmouseleave = function (e){
+//     betweendreamsimg.style.display="none";
+// }
+
+// betweendreamshover.onmousemove = function (e){
+//     betweendreamsimg.style.left = e.pageX + 5 + "px";
+//     betweendreamsimg.style.top = e.pageY - 30 + "px";
+// }
+
+// SAP ua hover //
+var sapuaimg = document.getElementById("sapua-img");
+var sapuahover = document.getElementById("sapua-hover");
+
+sapuahover.onmouseenter = function (e){
+    sapuaimg.style.display="block";
 }
 
-betweendreamshover.onmouseleave = function (e){
-    betweendreamsimg.style.display="none";
+sapuahover.onmouseleave = function (e){
+    sapuaimg.style.display="none";
 }
 
-betweendreamshover.onmousemove = function (e){
-    betweendreamsimg.style.left = e.pageX + 5 + "px";
-    betweendreamsimg.style.top = e.pageY - 30 + "px";
+sapuahover.onmousemove = function (e){
+    sapuaimg.style.left = e.pageX + 3 + "px";
+    sapuaimg.style.top = e.pageY - 60 + "px";
 }
