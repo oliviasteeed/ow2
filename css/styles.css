@@ -71,6 +71,10 @@
 .light a {
   color: var(--blue);
 }
+.light .title-link{
+  color: var(--black);
+}
+
 .light .project-card:hover,
 .light .project-card:focus,
 .light .title-card:hover,
