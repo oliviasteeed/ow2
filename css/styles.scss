@@ -598,8 +598,8 @@ h2 {
     padding: 0;
     font-family: "sohne-buch", sans-serif;
     font-weight: 400;
-    font-size: rem(16);
-    line-height: 100%;
+    font-size: rem(14);
+    line-height: 200%;
     font-style: normal;
 }
 
@@ -633,6 +633,7 @@ h4 {
     font-weight: 300;
     letter-spacing: 0px;
     font-style: normal;
+    opacity:55%;
 }
 
 .p-small {
@@ -643,7 +644,7 @@ h4 {
     line-height: 150%;
     font-weight: 300;
     font-style: normal;
-    opacity:70%;
+    opacity:55%;
     margin-bottom:0.5rem;
 }
 
@@ -677,7 +678,7 @@ h4 {
     font-weight: 300;
     line-height: 130%;
     font-style: normal;
-    opacity:70%;
+    opacity:55%;
 }
 
 li {
@@ -689,7 +690,7 @@ li {
     font-weight: 300;
     font-style: normal;
     margin-bottom:0.5rem;
-    opacity:70%;
+    opacity:55%;
 }
 
 strong {
@@ -773,7 +774,7 @@ em {
     margin: 0;
     padding: 0;
     font-family: "sohne-buch", sans-serif;
-    font-size: rem(20);
+    font-size: rem(18);
     font-style: normal;
     font-weight: 400;
     text-decoration: none;
