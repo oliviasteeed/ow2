@@ -1,4 +1,3 @@
-@charset "UTF-8";
 :root {
   --title-font: "alpina-thin", serif;
   --h4-font: "alpina-regular", serif;
@@ -23,22 +22,22 @@
   font-family: "sohne-buch";
   font-style: normal;
   font-weight: 300;
-  src: url("../fonts/sohne/TestSöhne-Buch.eot");
-  src: url("../fonts/sohne/TestSöhne-Buch.eot?#iefix") format("embedded-opentype"), url("../fonts/sohne/TestSöhne-Buch.woff2") format("woff2"), url("../fonts/sohne/TestSöhne-Buch.woff") format("woff"), url("../fonts/sohne/TestSöhne-Buch.ttf") format("truetype");
+  src: url("../fonts/sohne/TestSohne-Buch.eot");
+  src: url("../fonts/sohne/TestSohne-Buch.eot?#iefix") format("embedded-opentype"), url("../fonts/sohne/TestSohne-Buch.woff2") format("woff2"), url("../fonts/sohne/TestSohne-Buch.woff") format("woff"), url("../fonts/sohne/TestSohne-Buch.ttf") format("truetype");
 }
 @font-face {
   font-family: "sohne-kraftig";
   font-style: bold;
   font-weight: 500;
-  src: url("../fonts/sohne/TestSöhne-Kräftig.eot");
-  src: url("../fonts/sohne/TestSöhne-Kräftig.eot?#iefix") format("embedded-opentype"), url("../fonts/sohne/TestSöhne-Kräftig.woff2") format("woff2"), url("../fonts/sohne/TestSöhne-Kräftig.woff") format("woff"), url("../fonts/sohne/TestSöhne-Kräftig.ttf") format("truetype");
+  src: url("../fonts/sohne/TestSohne-Kraftig.eot");
+  src: url("../fonts/sohne/TestSohne-Kraftig.eot?#iefix") format("embedded-opentype"), url("../fonts/sohne/TestSohne-Kraftig.woff2") format("woff2"), url("../fonts/sohne/TestSohne-Kraftig.woff") format("woff"), url("../fonts/sohne/TestSohne-Kraftig.ttf") format("truetype");
 }
 @font-face {
   font-family: "sohne-leicht";
   font-style: normal;
   font-weight: 300;
-  src: url("../fonts/sohne/TestSöhne-Leicht.eot");
-  src: url("../fonts/sohne/TestSöhne-Leicht.eot?#iefix") format("embedded-opentype"), url("../fonts/sohne/TestSöhne-Leicht.woff2") format("woff2"), url("../fonts/sohne/TestSöhne-Leicht.woff") format("woff"), url("../fonts/sohne/TestSöhne-Leicht.ttf") format("truetype");
+  src: url("../fonts/sohne/TestSohne-Leicht.eot");
+  src: url("../fonts/sohne/TestSohne-Leicht.eot?#iefix") format("embedded-opentype"), url("../fonts/sohne/TestSohne-Leicht.woff2") format("woff2"), url("../fonts/sohne/TestSohne-Leicht.woff") format("woff"), url("../fonts/sohne/TestSohne-Leicht.ttf") format("truetype");
 }
 :root {
   --white: #ffffff;
