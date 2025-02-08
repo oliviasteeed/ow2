@@ -1,5 +1,5 @@
 .global-container {
-  margin: 0.625rem;
+  margin: 1.25rem;
 }
 
 /* header bar */
@@ -15,7 +15,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: sticky;
-  top: 0;
+  top: 0px;
   z-index: 1;
 }
 
@@ -32,7 +32,7 @@
       -ms-flex-direction: row;
           flex-direction: row;
   gap: 0.5rem;
-  width: 105px;
+  width: 115px;
 }
 
 /* title page */
@@ -76,7 +76,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .home-project-section {
@@ -102,7 +102,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.75rem;
   max-width: 21.875rem;
   min-width: 12.5rem;
 }
@@ -338,6 +338,7 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  gap: 0.5rem;
 }
 
 .colours-container {

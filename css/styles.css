@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --title-font: "alpina-thin", serif;
   --h4-font: "alpina-regular", serif;
@@ -17,6 +18,27 @@
   font-weight: 300;
   src: url("../fonts/GT-Alpina-Condensed-Thin-Trial.eot");
   src: url("../fonts/GT-Alpina-Condensed-Thin-Trial.eot?#iefix") format("embedded-opentype"), url("../fonts/GT-Alpina-Condensed-Thin-Trial.woff2") format("woff2"), url("../fonts/GT-Alpina-Condensed-Thin-Trial.woff") format("woff"), url("../fonts/GT-Alpina-Condensed-Thin-Trial.ttf") format("truetype");
+}
+@font-face {
+  font-family: "sohne-buch";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/sohne/TestSöhne-Buch.eot");
+  src: url("../fonts/sohne/TestSöhne-Buch.eot?#iefix") format("embedded-opentype"), url("../fonts/sohne/TestSöhne-Buch.woff2") format("woff2"), url("../fonts/sohne/TestSöhne-Buch.woff") format("woff"), url("../fonts/sohne/TestSöhne-Buch.ttf") format("truetype");
+}
+@font-face {
+  font-family: "sohne-kraftig";
+  font-style: bold;
+  font-weight: 500;
+  src: url("../fonts/sohne/TestSöhne-Kräftig.eot");
+  src: url("../fonts/sohne/TestSöhne-Kräftig.eot?#iefix") format("embedded-opentype"), url("../fonts/sohne/TestSöhne-Kräftig.woff2") format("woff2"), url("../fonts/sohne/TestSöhne-Kräftig.woff") format("woff"), url("../fonts/sohne/TestSöhne-Kräftig.ttf") format("truetype");
+}
+@font-face {
+  font-family: "sohne-leicht";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/sohne/TestSöhne-Leicht.eot");
+  src: url("../fonts/sohne/TestSöhne-Leicht.eot?#iefix") format("embedded-opentype"), url("../fonts/sohne/TestSöhne-Leicht.woff2") format("woff2"), url("../fonts/sohne/TestSöhne-Leicht.woff") format("woff"), url("../fonts/sohne/TestSöhne-Leicht.ttf") format("truetype");
 }
 :root {
   --white: #ffffff;
@@ -69,12 +91,8 @@
   color: var(--black);
 }
 .light a {
-  color: var(--blue);
-}
-.light .title-link{
   color: var(--black);
 }
-
 .light .project-card:hover,
 .light .project-card:focus,
 .light .title-card:hover,
@@ -447,20 +465,20 @@ b {
 h1 {
   margin: 0;
   padding: 0;
-  font-family: "alpina-thin", serif;
-  font-size: 3.4375rem;
-  letter-spacing: -0.203125rem;
-  font-weight: normal;
+  font-family: "sohne-buch", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  letter-spacing: -0.5px;
+  line-height: 100%;
   font-style: normal;
 }
 
 h2 {
   margin: 0;
   padding: 0;
-  font-family: "neue-haas-unica", sans-serif;
+  font-family: "sohne-buch", sans-serif;
   font-weight: 400;
   font-size: 1rem;
-  letter-spacing: -0.5px;
   line-height: 100%;
   font-style: normal;
 }
@@ -468,64 +486,62 @@ h2 {
 h3 {
   margin: 0;
   padding: 0;
-  font-family: "neue-haas-unica", sans-serif;
+  font-family: "sohne-buch", sans-serif;
   font-weight: 500;
-  font-size: 1.5rem;
-  letter-spacing: -0.5px;
-  line-height: 100%;
+  font-size: 1.25rem;
+  line-height: 150%;
   font-style: normal;
 }
 
 h4 {
   margin: 0;
   padding: 0;
-  font-family: "neue-haas-unica", sans-serif;
+  font-family: "sohne-buch", sans-serif;
   font-size: 1rem;
-  letter-spacing: -0.5px;
   font-style: normal;
   font-weight: 400;
   text-decoration: none;
+  line-height: 150%;
 }
 
 .p-smallest {
   margin: 0;
   padding: 0;
-  font-family: "neue-haas-unica", sans-serif;
+  font-family: "sohne-leicht", sans-serif;
   font-size: 0.75rem;
-  letter-spacing: -0.25px;
-  line-height: 130%;
-  font-weight: 400;
+  line-height: 150%;
+  font-weight: 300;
+  letter-spacing: 0px;
   font-style: normal;
 }
 
 .p-small {
   margin: 0;
   padding: 0;
-  font-family: "neue-haas-unica", sans-serif;
+  font-family: "sohne-leicht", sans-serif;
   font-size: 1rem;
-  letter-spacing: -0.01px;
-  line-height: 145%;
+  line-height: 150%;
   font-weight: 300;
   font-style: normal;
+  opacity: 70%;
+  margin-bottom: 0.5rem;
 }
 
 .bold-p-small {
   margin: 0;
   padding: 0;
-  font-family: "neue-haas-unica", sans-serif;
-  font-size: 1.125rem;
-  letter-spacing: -0.25px;
-  line-height: 130%;
+  font-family: "sohne-kraftig", sans-serif;
+  font-size: 1rem;
+  line-height: 150%;
   font-weight: 500;
-  font-style: normal;
+  font-style: bold;
 }
 
 .p-large {
   margin: 0;
   padding: 0;
-  font-family: "neue-haas-unica", sans-serif;
+  font-family: "sohne-leicht", sans-serif;
   font-size: 2rem;
-  letter-spacing: -0.5px;
   line-height: 130%;
   font-style: normal;
   font-weight: 400;
@@ -534,23 +550,24 @@ h4 {
 .p-medium {
   margin: 0;
   padding: 0;
-  font-family: "neue-haas-unica", sans-serif;
-  font-size: 1.5rem;
+  font-family: "sohne-leicht", sans-serif;
+  font-size: 1rem;
   font-weight: 300;
-  letter-spacing: -0.25px;
   line-height: 130%;
   font-style: normal;
+  opacity: 70%;
 }
 
 li {
   margin: 0;
   padding: 0;
-  font-family: "neue-haas-unica", sans-serif;
+  font-family: "sohne-leicht", sans-serif;
   font-size: 1rem;
-  letter-spacing: -0.01px;
-  line-height: 145%;
+  line-height: 150%;
   font-weight: 300;
   font-style: normal;
+  margin-bottom: 0.5rem;
+  opacity: 70%;
 }
 
 strong {
@@ -567,7 +584,7 @@ strong {
 em {
   margin: 0;
   padding: 0;
-  font-family: "neue-haas-unica", sans-serif;
+  font-family: "sohne-buch", sans-serif;
   font-size: 2rem;
   letter-spacing: -0.5px;
   line-height: 130%;
@@ -579,9 +596,8 @@ em {
 .nav-link {
   margin: 0;
   padding: 0;
-  font-family: "neue-haas-unica", sans-serif;
+  font-family: "sohne-buch", sans-serif;
   font-size: 1rem;
-  letter-spacing: -1px;
   font-style: normal;
   font-weight: 400;
   text-decoration: none;
@@ -592,9 +608,8 @@ em {
 .project-link {
   margin: 0;
   padding: 0;
-  font-family: "neue-haas-unica", sans-serif;
+  font-family: "sohne-buch", sans-serif;
   font-size: 1.25rem;
-  letter-spacing: -1px;
   font-style: normal;
   font-weight: 400;
   text-decoration: none;
