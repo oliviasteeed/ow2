@@ -31,8 +31,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  gap: 0.5rem;
-  width: 115px;
+  gap: 1rem;
+  width: 125px;
 }
 
 /* title page */
